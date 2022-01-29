@@ -41,13 +41,6 @@ error() {
 }
 
 
-#### Check Sudo ####
-
-if [[ $EUID -ne 0 ]]; then
-  echo "* This script must be executed with root privileges (sudo)." 1>&2
-  exit 1
-fi
-
 
 #### Check Curl ####
 
